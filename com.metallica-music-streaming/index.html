@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metallica Music Streaming</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>Metallica Music Streaming</header>
+
+<div class="container">
+
+    <!-- ROLE SELECTION -->
+    <div class="card">
+        <h2>Select Your Role</h2>
+        <label>Select Role:</label>
+        <select id="roleSelect">
+            <option value="ADMIN">ADMIN</option>
+            <option value="ARTIST">ARTIST</option>
+            <option value="LISTENER">LISTENER</option>
+        </select>
+    </div>
+
+    <!-- OPTION SELECTOR -->
+    <div class="card">
+        <h2>Choose Option</h2>
+
+        <select id="optionSelect" onchange="showSection()">
+            <option value="0">-- Select an option --</option>
+
+            <optgroup label="ADMIN">
+                <option value="1">1. Create User</option>
+                <option value="2">2. Update User</option>
+                <option value="3">3. Delete User</option>
+                <option value="4">4. Approve Music</option>
+            </optgroup>
+
+            <optgroup label="ARTIST">
+                <option value="5">5. Upload Music</option>
+                <option value="6">6. Interact with Fans</option>
+                <option value="7">7. Track Music Performance</option>
+            </optgroup>
+
+            <optgroup label="LISTENER">
+                <option value="8">8. Stream Music</option>
+                <option value="9">9. Create Playlist</option>
+                <option value="10">10. Add Music to Playlist</option>
+                <option value="11">11. Follow Artist</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <!-- ====================== SECTIONS ========================== -->
+
+    <div id="sec1" class="card feature-section hidden">
+        <div class="section-title">Create User</div>
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <input type="text" placeholder="Enter Role (ADMIN / ARTIST / LISTENER)">
+        <button>Create User</button>
+    </div>
+
+    <div id="sec2" class="card feature-section hidden">
+        <div class="section-title">Update User</div>
+        <input type="text" placeholder="Enter New Name">
+        <input type="email" placeholder="Enter Email">
+        <input type="text" placeholder="New Role">
+        <button>Update User</button>
+    </div>
+
+    <div id="sec3" class="card feature-section hidden">
+        <div class="section-title">Delete User</div>
+        <input type="email" placeholder="Enter Email to Delete">
+        <button>Delete User</button>
+    </div>
+
+    <div id="sec4" class="card feature-section hidden">
+        <div class="section-title">Approve Music</div>
+        <input type="text" placeholder="Enter Music Title">
+        <button>Approve</button>
+    </div>
+
+    <div id="sec5" class="card feature-section hidden">
+        <div class="section-title">Upload Music</div>
+        <input type="text" placeholder="Enter Title">
+        <input type="text" placeholder="Enter Album">
+
+        <label>Select Genre:</label>
+        <select>
+            <option>Pop</option><option>Rock</option><option>Hip Hop</option>
+            <option>Jazz</option><option>Classical</option><option>Electronic</option>
+            <option>R&B</option><option>Country</option><option>Blues</option>
+            <option>Reggae</option><option>Metal</option><option>Folk</option>
+            <option>Soul</option><option>Funk</option><option>EDM</option>
+            <option>Indie</option><option>Bollywood</option><option>World</option>
+            <option>Gospel</option>
+        </select>
+
+        <button>Upload Music</button>
+    </div>
+
+    <div id="sec6" class="card feature-section hidden">
+        <div class="section-title">Interact with Fans</div>
+        <textarea placeholder="Enter message to fans"></textarea>
+        <button>Send</button>
+    </div>
+
+    <div id="sec7" class="card feature-section hidden">
+        <div class="section-title">Track Performance</div>
+        <input type="text" placeholder="Enter Music Title">
+        <button>Track Performance</button>
+    </div>
+
+    <div id="sec8" class="card feature-section hidden">
+        <div class="section-title">Stream Music</div>
+        <input type="text" placeholder="Enter Title">
+        <button>Stream</button>
+    </div>
+
+    <div id="sec9" class="card feature-section hidden">
+        <div class="section-title">Create Playlist</div>
+        <input type="text" placeholder="Playlist Title">
+        <input type="text" placeholder="Add Song Title">
+        <button>Create Playlist</button>
+    </div>
+
+    <div id="sec10" class="card feature-section hidden">
+        <div class="section-title">Add Music to Playlist</div>
+        <input type="text" placeholder="Playlist Title">
+        <input type="text" placeholder="Music Title">
+        <button>Add</button>
+    </div>
+
+    <div id="sec11" class="card feature-section hidden">
+        <div class="section-title">Follow Artist</div>
+        <input type="text" placeholder="Artist Name">
+        <button>Follow</button>
+    </div>
+
+</div>
+
+</body>
+</html>
