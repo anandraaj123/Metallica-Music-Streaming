@@ -86,15 +86,6 @@ This project was created to:
 Pull requests and suggestions are welcome!  
 Feel free to fork the repo and build your own version of MetaLLiCS.
 
----
-
-## 📧 Contact
-
-Developed by **Anand**  
-If you’d like to collaborate or discuss improvements:
-
-- Email: connect2anandkr@gmail.com  
-- LinkedIn: https://www.linkedin.com/in/connect-to-anand/
 
 ---
 
