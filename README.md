@@ -1,6 +1,6 @@
 # 🎬 MetaLLiCS — Online Streaming Platform
 
-MetaLLiCS is a modern online streaming platform designed to provide a smooth, fast, and engaging video-watching experience.  
+MetaLLiCS is a modern online streaming platform designed to provide a smooth, fast, and engaging Audio listening experience.  
 The platform focuses on clean UI, efficient performance, and an intuitive user flow inspired by popular OTT applications.
 
 This project demonstrates frontend development skills, UI design, and logical structuring of a streaming system.
@@ -11,7 +11,7 @@ This project demonstrates frontend development skills, UI design, and logical st
 
 ### 🎥 Streaming Interface
 - Clean and minimal UI  
-- Dynamic video card layout  
+- Dynamic Audio card layout  
 - Category-wise content display  
 - Hover animations and transitions  
 
